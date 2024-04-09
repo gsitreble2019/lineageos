@@ -5,13 +5,11 @@ myArray=("coral" "walleye" "taimen" "blueline" "crosshatch" "sargo" "bonito" "fl
 RANDOM_DEVICE=${myArray[ $RANDOM % ${#myArray[@]} ]}
 echo $RANDOM_DEVICE
 
-myArray=("coral" "walleye" "taimen" "blueline" "crosshatch" "sargo" "bonito" "flame" "sailfish" "sunfish" "bramble" "redfin" "barbet" "oriole" "raven" "bluejay" "panther" "cheetah" "lynx" "marlin")
-for GH_TAG in ${myArray[@]}
-do
-github-release release  --user gsitreble2019 --repo microglineageos --tag $GH_TAG
-done
-
-exit 0
+#myArray=("coral" "walleye" "taimen" "blueline" "crosshatch" "sargo" "bonito" "flame" "sailfish" "sunfish" "bramble" "redfin" "barbet" "oriole" "raven" "bluejay" "panther" "cheetah" "lynx" "marlin")
+#for GH_TAG in ${myArray[@]}
+#do
+#github-release release  --user gsitreble2019 --repo microglineageos --tag $GH_TAG
+#done
 
 #for LIST_OF_DEVICES in ${myArray[@]}
 echo "Downloading lineage files"
